@@ -1,0 +1,22 @@
+
+
+
+header{
+    display:flex;
+
+}
+
+
+/* Navigation Bar */
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style-type: none;
+    
+}
+
+nav ul li{
+    text-decoration: none;
+    padding:20px;
+}
