@@ -1,22 +1,88 @@
 
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
 
-
-header{
-    display:flex;
-
+body{
+    font-family: 'Bree Serif', serif;
+    font-weight:200; /*400 is standard*/
+    color: darkorange;
 }
 
 
+/*header*/
+
+header{
+    display:flex; 
+    flex-wrap:wrap;
+}
+
+header div{
+    display:flex;
+    flex:1;
+}
+
+#name{
+    /*defining the space header name takes up in relation to nav */
+    justify-content: center;
+   
+}
+
+#name h1 a{
+    text-decoration: none;
+    color:darkorange;
+}
+
+#mainpic{
+    min-height: 500px;
+    background:url('/img/mainpic2.jpeg') no-repeat
+    -300px -300px  ; /*positioning of element so it looks better*/
+    background-size:auto;
+    
+}
+
 /* Navigation Bar */
+
+nav{
+    flex:2; /*splitting navbar in half with header name*/
+}
 
 nav ul{
     display:flex;
     flex-direction: row;
     list-style-type: none;
-    
+    justify-content: center;
 }
 
 nav ul li{
-    text-decoration: none;
     padding:20px;
+   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:darkorange;
+}
+
+nav a:hover{
+    color:#e70e06;
+}
+
+
+/* Main */
+
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main p{
+    width:80%;
+    text-align:center;
+    margin:0;
+}
+
+footer{
+    margin-top:3rem;
+    padding:1.5rem;
+    text-align: center;
 }
