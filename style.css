@@ -1,9 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
 
+
+:root { font-family: 'Bree Serif', serif;
+        font-weight:200; /*400 is standard*/}
+
+
 body{
-    font-family: 'Bree Serif', serif;
-    font-weight:200; /*400 is standard*/
     color: darkorange;
 }
 
@@ -12,7 +15,6 @@ body{
 
 header{
     display:flex; 
-    flex-wrap:wrap;
 }
 
 header div{
@@ -21,7 +23,6 @@ header div{
 }
 
 #name{
-    /*defining the space header name takes up in relation to nav */
     justify-content: center;
    
 }
@@ -31,18 +32,25 @@ header div{
     color:darkorange;
 }
 
+.container{
+     /* display:flex; */
+    /* flex-direction:row;
+    justify-content: center; */ 
+    /* align-self:center; */
+}
+
 #mainpic{
-    min-height: 500px;
-    background:url('/img/mainpic2.jpeg') no-repeat
-    -300px -300px  ; /*positioning of element so it looks better*/
-    background-size:auto;
-    
+    min-height: 600px;
+    background:url('/img/mainpic2.jpeg') no-repeat;
+    background-size:contain;
+    background-position:center;
 }
 
 /* Navigation Bar */
 
 nav{
-    flex:2; /*splitting navbar in half with header name*/
+    flex:2; 
+    /*splitting navbar into thirds with header name*/
 }
 
 nav ul{
@@ -52,18 +60,15 @@ nav ul{
     justify-content: center;
 }
 
-nav ul li{
-    padding:20px;
-   
-}
 
 nav ul li a{
     text-decoration: none;
     color:darkorange;
+    padding:20px;
 }
 
 nav a:hover{
-    color:#e70e06;
+    color:purple;
 }
 
 
@@ -79,10 +84,23 @@ nav a:hover{
     width:80%;
     text-align:center;
     margin:0;
+    border:1px solid black;
 }
 
 footer{
-    margin-top:3rem;
-    padding:1.5rem;
+    margin-top:3em;
+    padding:1.5em;
     text-align: center;
+    border:1px solid black;
 }
+
+
+/* BLOG */
+
+.blogwrapper{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    grid-gap:1em;
+}
+
+/* .blogwrapper > div : */
