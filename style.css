@@ -1,4 +1,6 @@
 
+/* GLOBALS ----------------------------------------------------------------------------------------------- */
+
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
 
 
@@ -11,7 +13,7 @@ body{
 }
 
 
-/*header------------------------------------------------------------------------------------------------*/
+/* HEADER  ------------------------------------------------------------------------------------------------*/
 
 header{
     display:flex; 
@@ -36,7 +38,12 @@ header div{
     color:darkorange;
 }
 
-/* Navigation Bar ------------------------------------------------------------------------------------------------*/
+/* NAVIGATION BAR ------------------------------------------------------------------------------------------------*/
+
+.active{
+    color:purple;
+    /*styles active page link*/
+}
 
 nav{
     flex:2; 
@@ -65,8 +72,8 @@ nav a:hover{
 }
 
 
-/* mainpic ------------------------------------------------------------------------------------------------*/
-#mainpic{
+/* HOME PIC ------------------------------------------------------------------------------------------------*/
+#homepic{
     min-height: 600px;
     background:url('/img/mainpic2.jpeg') no-repeat;
     background-size:stretch;
@@ -75,15 +82,15 @@ nav a:hover{
 
 
 
-/* main text------------------------------------------------------------------------------------------------*/
+/* HOME TEXT------------------------------------------------------------------------------------------------*/
 
-.main {
+.home {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.main p{
+.home p{
     width:80%;
     text-align:center;
     margin:0;
@@ -91,7 +98,7 @@ nav a:hover{
 }
 
 
-/*footer ------------------------------------------------------------------------------------------------*/
+/* FOOTER ------------------------------------------------------------------------------------------------*/
 
 footer{
     margin-top:3em;
@@ -99,6 +106,7 @@ footer{
     text-align: center;
     border:1px solid black;
 }
+
 
 
 /* BLOG  ------------------------------------------------------------------------------------------------*/
@@ -156,7 +164,32 @@ div .blogimg{
 }
 
 
-/* Media Queries */
+/* CONTACT ------------------------------------------------------------------------------------------------ */
+
+.contacttext{
+    text-align:center;
+}
+
+.social{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+
+/*the github symbol was a bit offset, below 3 lines of code fixes it */
+.social :first-child{
+    position:relative;
+    top:18px;   
+}
+
+
+.social a:hover{
+    transform:rotate(360deg);
+    transition:1s ;
+}
+
+/* MEDIA QUERIES ------------------------------------------------------------------------------------------------*/
 
 @media(max-width:980px){
     .blogwrapper{
