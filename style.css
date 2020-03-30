@@ -11,7 +11,7 @@ body{
 }
 
 
-/*header*/
+/*header------------------------------------------------------------------------------------------------*/
 
 header{
     display:flex; 
@@ -36,7 +36,7 @@ header div{
     color:darkorange;
 }
 
-/* Navigation Bar */
+/* Navigation Bar ------------------------------------------------------------------------------------------------*/
 
 nav{
     flex:2; 
@@ -65,7 +65,7 @@ nav a:hover{
 }
 
 
-/* mainpic */
+/* mainpic ------------------------------------------------------------------------------------------------*/
 #mainpic{
     min-height: 600px;
     background:url('/img/mainpic2.jpeg') no-repeat;
@@ -75,7 +75,7 @@ nav a:hover{
 
 
 
-/* main */
+/* main text------------------------------------------------------------------------------------------------*/
 
 .main {
     display:flex;
@@ -91,7 +91,7 @@ nav a:hover{
 }
 
 
-/*footer */
+/*footer ------------------------------------------------------------------------------------------------*/
 
 footer{
     margin-top:3em;
@@ -101,17 +101,25 @@ footer{
 }
 
 
-/* BLOG */
+/* BLOG  ------------------------------------------------------------------------------------------------*/
+
 
 .blogwrapper{
     max-width:90%;
     display:grid;
     grid-template-columns: 2fr 1fr;
+    /* grid-template-columns: repeat(auto-fit, minmax(30%vh,1fr)); */
+    /*repeat */
     grid-gap:1em;
+    /* grid-auto-rows: auto; */
+    /* display:flex;
+    flex-flow: column; */
     /* grid-auto-rows:minxmax(100px,auto); */
     /* justify-content:center; */
     /* align-content:center; */
-    
+    /* justify-items: stretch; */
+    /* display:flex;
+    flex-flow:column; */
   
 }
 
@@ -121,12 +129,37 @@ footer{
     text-align:center;
 }
 
-.blogtext{
+.blogblock{
     background:#ccc;
-    padding:1em;
+    padding:2em;
+    border-radius:1em;
+    border-style:dashed;
+    margin-bottom:5em;
+}
+
+.blogtext{
+    padding-top:1em;
+}
+
+div .blogimg{
+    display:flex;
+    justify-content: center;
+    /*images get centered*/
 }
 
 .blogimg img{
-    max-width:100%
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;*/
+    max-width:500px;
+    border-radius:4%;
+}
 
+
+/* Media Queries */
+
+@media(max-width:980px){
+    .blogwrapper{
+        grid-template-columns: 1fr;
+    }
 }
