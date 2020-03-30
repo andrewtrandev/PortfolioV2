@@ -174,19 +174,41 @@ div .blogimg{
     display:flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    align-items:center;
 }
-
 
 /*the github symbol was a bit offset, below 3 lines of code fixes it */
 .social :first-child{
     position:relative;
-    top:18px;   
+    top:1em;
+    padding:0.5em;   
+}
+
+.icon{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.icon img:hover{
+    transform:scale(1.1);
+    transition-duration:1s ;
+    transition-timing-function: ease-out;
+   
+}   
+
+
+/* targeting github icon specifically because it was out of line*/
+.icon.github{
+    position:relative;
+    top:0.5em;
+
 }
 
 
-.social a:hover{
-    transform:rotate(360deg);
-    transition:1s ;
+/*targeting github text under the github icon because it was out of line*/
+.icon.github h3{
+    padding-top:0.6em;
 }
 
 /* MEDIA QUERIES ------------------------------------------------------------------------------------------------*/
