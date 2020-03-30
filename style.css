@@ -15,11 +15,13 @@ body{
 
 header{
     display:flex; 
+    
 }
 
 header div{
     display:flex;
     flex:1;
+   
 }
 
 #name{
@@ -32,17 +34,11 @@ header div{
     color:darkorange;
 }
 
-.container{
-     /* display:flex; */
-    /* flex-direction:row;
-    justify-content: center; */ 
-    /* align-self:center; */
-}
-
+/* mainpic */
 #mainpic{
     min-height: 600px;
     background:url('/img/mainpic2.jpeg') no-repeat;
-    background-size:contain;
+    background-size:stretch;
     background-position:center;
 }
 
@@ -98,9 +94,29 @@ footer{
 /* BLOG */
 
 .blogwrapper{
+    max-width:90%;
     display:grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 2fr 1fr;
     grid-gap:1em;
+    /* grid-auto-rows:minxmax(100px,auto); */
+    /* justify-content:center; */
+    /* align-content:center; */
+    
+  
 }
 
-/* .blogwrapper > div : */
+.blogwrapper h2, .blogwrapper p{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.blogtext{
+    background:#ccc;
+    padding:1em;
+}
+
+.blogimg img{
+    max-width:100%
+
+}
