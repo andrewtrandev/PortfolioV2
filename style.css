@@ -75,8 +75,7 @@ nav a:hover{
 /* HOME PIC ------------------------------------------------------------------------------------------------*/
 #homepic{
     min-height: 600px;
-    background:url('/img/mainpic2.jpeg') no-repeat;
-    background-size:stretch;
+    background:url('img/mainpic2.jpeg') no-repeat;
     background-position:center;
 }
 
