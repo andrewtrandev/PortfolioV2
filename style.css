@@ -82,7 +82,8 @@ nav a:hover{
 
 /* HOME PIC ------------------------------------------------------------------------------------------------*/
 #homepic{
-    min-height: 600px;
+    /* min-height: 600px; */
+    min-height: 37.5em;
     background:url('img/mainpic2.jpeg') no-repeat;
     background-position:center;
 }
@@ -97,8 +98,8 @@ nav a:hover{
     align-items: center;
 }
 
-.home h2{
-    padding-top:2em;
+.home :first-child{
+    padding-top:3em;
 }
 .home p{
     /* width:80%; */
@@ -113,7 +114,7 @@ nav a:hover{
 /* FOOTER ------------------------------------------------------------------------------------------------*/
 
 footer{
-    margin-top:3em;
+    margin-top:4em;
     padding:1.5em;
     text-align: center;
     /* border:1px solid black; */
@@ -150,6 +151,7 @@ footer{
     background:#5C5F4A;
    }
 
+
 .blogtext{
     padding-top:1em;
 }
@@ -172,6 +174,7 @@ div .blogimg{
 
 /* PROJECTS ----------------------------------------------------------------------------------------------- */
 
+/*setting 2 columns for grid, centered with margin:auto*/
 .projects{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -186,9 +189,9 @@ div .blogimg{
     height:auto;
     border-radius:1em;
     margin:auto;
-    /* align-items: center; */
 }
 
+/*apply to spans on projects*/
 .highlights{
     color:#978376;
 }
@@ -199,6 +202,11 @@ div .blogimg{
     text-align:center;
 }
 
+
+/* ICONS ------------------------------------- */
+
+
+/* making icons responsive and display evenly across screen */
 .contactme{
     display:flex;
     flex-flow: row wrap;
@@ -234,11 +242,27 @@ div .blogimg{
 
 }
 
-
 /*targeting github text under the github icon because it was out of line*/
 .iconblock.github h3{
     padding-top:0.6em;
 }
+
+/*PDF ------------------------------------*/
+
+.pdfdownload{
+    display:flex;
+    justify-content: center;
+}
+
+.pdfdownload a{
+    color: #F5FAF9;
+    margin:auto;
+    padding:4em;
+    
+}
+
+
+/* CONTACT BOX ------------------------------------- */
 
 /*centers side bar*/
 aside{
@@ -246,7 +270,7 @@ aside{
     justify-content: center;
 }
 
-
+/*styling for contact box*/
 .contactbox{
     border: 1px #F5FAF9;
     border-style: dashed;
@@ -256,17 +280,17 @@ aside{
     border-radius:1em;
 }
 
-/*sets the input boxes for the contact form*/
-.contact input, .contact textarea{
-   width:45em;
-   padding:0.3em;
-}
-
 
 .contact textarea{
     height:90px;
     resize:none;
 }
+
+/*sets the input boxes for the contact form*/
+.contact input, .contact textarea{
+    width:45em;
+    padding:0.3em;
+ }
 
 
 /* MEDIA QUERIES ------------------------------------------------------------------------------------------------*/
@@ -282,4 +306,11 @@ aside{
     .projects{
         grid-template-columns: 1fr;
     }
+
+
+    /*resize contact box on contact page*/
+    .contact input, .contact textarea{
+        width:30em;
+        padding:0.3em;
+     }
 }
