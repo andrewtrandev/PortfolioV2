@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a class="active" href="about.html">PROJECTS</a></li>
+                <li><a class="active" href="projects.html">PROJECTS</a></li>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -22,13 +22,34 @@
     </header>
 
     <section>
-        <article>
+        <article class="projects">
         <h2>Ruby Terminal Application</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, veritatis, explicabo delectus esse inventore quae cupiditate
-             consequatur ex mollitia fugit, in libero aut placeat quia molestias repellendus maiores voluptates sint?
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum possimus ullam culpa minus fuga voluptatibus recusandae 
-            animi fugiat id eligendi doloremque repellat dolore officia modi earum, quae tempore, deserunt nobis.</p>
+        <p>I worked on a word game application to run in terminal using the Ruby language. 
+            <br>
+            Features:
+            Replay game - a while loop that allows you to continue to play again by selecting either yes/no. <br><br>
+
+            Limited it to just a menu select for yes/no so that user can't enter other commands and inputs are sanitized.<br><br>
+
+            Accruing point system - points earned will carry over to future games in the instance. <br>
+            Adds the score onto a variable outside the while loop so that the score doesn't get reset each time the game goes <br>
+            through the while loop.<br><br>
+            
+            Vowel adder - if number of letters is greater than 6, add more vowels to make the game easier. <br>
+            Done through a method that first checks if the word is less than 6 letters and if so will shuffle at least one vowel in, <br>
+            if the word is greater than 6 letters it'll shuffle at least 2 vowels in. This is done through if/else and shuffling of arrays.<br><br>
+            
+            Mismatching letters loop - If user inputs letters that don't equal the output randomized letters then continue running a <br>
+            while loop that outputs the random letters and prompts them to input letters that match the output randomized letters. <br>
+            I was initially using delete() but that would delete every instance of a variable and cause errors for words like 'goon'. <br>
+            Had to delete the specific letter in the array by referencing it's index using .index and also had to make a different array<br>
+            so that it wasn't deleting the original arrays letters.<br><br>
+            
+            Scrabble hash - Calculates score using a scrabble hash which values rarer words higher versus the original idea of using <br>
+            length of the word. Downloaded a 3rd party ruby file and used require_relative to access it's functionality.<br></p>
+            <img src="img/terminalproject.PNG" alt="Picture of Terminal Project">
         </article>
+        
         <article>
         <h2>Web Portfolio</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate cum quis earum possimus consequatur facilis provident. 
