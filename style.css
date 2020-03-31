@@ -97,12 +97,17 @@ nav a:hover{
     align-items: center;
 }
 
+.home h2{
+    padding-top:2em;
+}
 .home p{
     /* width:80%; */
     text-align:center;
     margin:0;
+    padding:1em;
     /* border:1px solid black; */
 }
+
 
 
 /* FOOTER ------------------------------------------------------------------------------------------------*/
@@ -182,6 +187,10 @@ div .blogimg{
     border-radius:1em;
     margin:auto;
     /* align-items: center; */
+}
+
+.highlights{
+    color:#978376;
 }
 
 /* CONTACT ------------------------------------------------------------------------------------------------ */
