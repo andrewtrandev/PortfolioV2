@@ -31,7 +31,7 @@ I've modified the website to also be mobile friendly and be accessible to the vi
 
 
 ### Screenshots
-![Index.html image](/docs/Home.PNG)
+![Index.html image](/docs/Home.png)
 ![About.html image](/docs/About.PNG)
 ![Projects.html image](/docs/Projects.PNG)
 ![Blog.html image](/docs/Blog.PNG)
