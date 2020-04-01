@@ -203,6 +203,7 @@ footer{
     margin:auto;
 }
 
+/*alternating colours for blogposts*/
 .blogblock:nth-of-type(even){
     background:#5C5F4A;
    }
@@ -372,17 +373,23 @@ aside{
         grid-template-columns: 1fr;
     }
 
-
     /*resize contact box on contact page*/
     .contact input, .contact textarea{
         width:20em;
         padding:0.3em;
      }
-}
+
+     .blogimg img{
+        max-width:340px;
+        height:auto;
+    }
+
+    }
 
 @media(max-width:375px){
     .contact input, .contact textarea{
         padding:0.3em;
      }
+    
 
 }
