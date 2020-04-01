@@ -77,6 +77,12 @@ nav ul li a{
 
 nav a:hover{
     color:#978376;
+} 
+
+
+nav a:active{
+position:relative;
+top: 2px;
 }
 
 
@@ -106,7 +112,6 @@ nav a:hover{
     text-align:center;
     margin:0;
     padding:1em;
-    /* border:1px solid black; */
 }
 
 
@@ -114,15 +119,37 @@ nav a:hover{
 /* FOOTER ------------------------------------------------------------------------------------------------*/
 
 footer{
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
     font-size:0.7em;
     margin-top:4em;
     padding:1.5em;
-    text-align: center;
     /* border:1px solid black; */
 }
 
+/* ABOUT ------------------------------------------------------------------------------------------------*/
+
+.aboutme{
+    display:flex;
+    justify-content: center;
+}
+
+.heading{
+    margin-top: 1em;
+    padding:1em;
+}
 
 
+.aboutlist li{
+    padding:0.3em;
+}
+
+/* the node icon was a bit bigger so I had to adjust it a bit to make it more uniform */
+.aboutlist li:last-child{
+    padding:0;
+    padding-bottom:2em;
+}
 /* BLOG  ------------------------------------------------------------------------------------------------*/
 
 
