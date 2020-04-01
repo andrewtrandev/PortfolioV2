@@ -13,7 +13,10 @@
 
 
 body{
-    color:#F5FAF9;
+    /* color:#F5FAF9; white*/
+    color:#978376; /*brown*/
+    /* color:#5C5F4A; green*
+    /* color:#18161B; black*/
 }
 
 
@@ -130,7 +133,23 @@ footer{
 
 /* ABOUT ------------------------------------------------------------------------------------------------*/
 
-.aboutme{
+
+/* makes the about text paragraphs centered and display as column*/
+.abouttext{
+    display:flex;
+    flex-flow: column;
+    margin-top:6em;
+    align-items: center;
+}
+
+/*set width of the paragraph boxes*/
+.abouttext p{
+    text-align:center;
+    max-width:75%;
+}
+
+
+.aboutlistbox{
     display:flex;
     justify-content: center;
 }
@@ -138,6 +157,7 @@ footer{
 .heading{
     margin-top: 1em;
     padding:1em;
+    color:#F5FAF9;
 }
 
 
@@ -145,11 +165,19 @@ footer{
     padding:0.3em;
 }
 
+
 /* the node icon was a bit bigger so I had to adjust it a bit to make it more uniform */
-.aboutlist li:last-child{
-    padding:0;
+.nodefix{
+    padding-top:0;
     padding-bottom:2em;
 }
+
+.aboutlist li img:hover{
+    transform:scale(1.2);
+}
+
+
+
 /* BLOG  ------------------------------------------------------------------------------------------------*/
 
 
@@ -179,6 +207,9 @@ footer{
     background:#5C5F4A;
    }
 
+.blogblock:nth-of-type(odd){
+    color:#5C5F4A;
+}
 
 .blogtext{
     padding-top:1em;
@@ -221,7 +252,7 @@ div .blogimg{
 
 /*apply to spans on projects*/
 .highlights{
-    color:#978376;
+    color:#F5FAF9;
 }
 
 /* CONTACT ------------------------------------------------------------------------------------------------ */
