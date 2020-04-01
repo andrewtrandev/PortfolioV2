@@ -9,12 +9,12 @@
     /* font-family: 'Bree Serif', serif;  */
     font-family: 'Libre Baskerville', serif;
     font-weight:200; /*400 is standard*/
-    background-color:#18161B}
+    background-color:#F4BF5A}
 
 
 body{
     /* color:#F5FAF9; white*/
-    color:#978376; /*brown*/
+    color:black; /*brown*/
     /* color:#5C5F4A; green*
     /* color:#18161B; black*/
 }
@@ -42,7 +42,7 @@ header div{
 
 #name h1 a{
     text-decoration: none;
-    color:#F5FAF9;
+    color:black;
 }
 
 #name :hover{
@@ -52,7 +52,7 @@ header div{
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------*/
 
 .active{
-    color:#978376;
+    color:#147E7E;
     /*styles active page link*/
 }
 
@@ -73,13 +73,13 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
-    color:#F5FAF9;
+    color:black;
     padding:0 10px 0 10px;
     
 }
 
 nav a:hover{
-    color:#978376;
+    color:#147E7E;
 } 
 
 
@@ -157,7 +157,7 @@ footer{
 .heading{
     margin-top: 1em;
     padding:1em;
-    color:#F5FAF9;
+    color:#147E7E;
 }
 
 
@@ -209,7 +209,7 @@ footer{
    }
 
 .blogblock:nth-of-type(odd){
-    color:#5C5F4A;
+    color:black;
 }
 
 .blogtext{
@@ -253,7 +253,7 @@ div .blogimg{
 
 /*apply to spans on projects*/
 .highlights{
-    color:#F5FAF9;
+    color:#147E7E;
 }
 
 /* CONTACT ------------------------------------------------------------------------------------------------ */
@@ -315,7 +315,7 @@ div .blogimg{
 
 /*style pdf link*/
 .pdfdownload a{
-    color: #F5FAF9;
+    color: #147E7E;
     margin:auto;
     margin-top:5em;
     margin-bottom:3em;
@@ -337,13 +337,13 @@ aside{
 
 /*styling for contact box*/
 .contactbox{
-    border: 1px #F5FAF9;
+    border: 1px #147E7E;
     border-style: dashed;
     margin-top:3em;
     padding:1em 2.5em 2.5em 2.5em;
-    background-color:#978376;
+    background-color:#ACB3A2;
     border-radius:1em;
-    color:#F5FAF9;
+    color:#147E7E;
 }
 
 
