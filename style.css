@@ -3,14 +3,17 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 
 :root { 
     /* font-family: 'Bree Serif', serif;  */
-    font-family: 'Libre Baskerville', serif;
-    font-weight:200; /*400 is standard*/
-    background-color:#18161B}
-
+    /* font-family: 'Libre Baskerville', serif; */
+    font-family: 'Source Code Pro', monospace;
+    font-weight:500; /*400 is standard*/
+    background-color:#18161B;
+    font-size:18px;}
 
 body{
     /* color:#F5FAF9; white*/
@@ -95,6 +98,7 @@ top: 2px;
     min-height: 37.5em;
     background:url('img/mainpic2.jpeg') no-repeat;
     background-position:center;
+    border-radius:2em;
 }
 
 
@@ -206,10 +210,11 @@ footer{
 /*alternating colours for blogposts*/
 .blogblock:nth-of-type(even){
     background:#5C5F4A;
+    color:#18161B;
    }
 
 .blogblock:nth-of-type(odd){
-    color:#5C5F4A;
+    color:#18161B;
 }
 
 .blogtext{
@@ -343,7 +348,7 @@ aside{
     padding:1em 2.5em 2.5em 2.5em;
     background-color:#978376;
     border-radius:1em;
-    color:#F5FAF9;
+    color:#18161B;
 }
 
 
