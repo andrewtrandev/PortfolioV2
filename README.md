@@ -37,19 +37,37 @@ I've modified the website to also be mobile friendly and be accessible to the vi
 ___
 
 ### Wireframes
+Wireframe for home page below
 ![Wireframe for home](/docs/wireframes/homepagew.PNG)
+
+Wireframe for about page below
 ![Wireframe for about](/docs/wireframes/aboutw.png)
+
+Wireframe for projects page below
 ![Wireframe for projects](/docs/wireframes/projectsw.png)
+
+Wireframe for blog page below
 ![Wireframe for blog](/docs/wireframes/blogw.png)
+
+Wireframe for contact page below
 ![Wireframe for contact](/docs/wireframes/contactw.png)
 
 ---
 
 ### Screenshots
+Homepage below
 ![Index.html image](/docs/Home.PNG)
+
+About page below
 ![About.html image](/docs/About.PNG)
+
+Projects page below
 ![Projects.html image](/docs/Projects.PNG)
+
+Blog page below
 ![Blog.html image](/docs/Blog.PNG)
+
+Contact page below
 ![Contact.html image](/docs/Contact.PNG)
 
 ---
