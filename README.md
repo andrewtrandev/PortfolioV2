@@ -25,10 +25,17 @@ I've modified the website to also be mobile friendly and be accessible to the vi
 
 #### Notable functions
 **The navigation bar**<br>
-  an important part of the website that should clearly indicate where a user is within the website. It should also be mobile responsive and condense into a smaller format when disaplyed  on smaller devices. 
+  an important part of the website that should clearly indicate where a user is within the website. It should 
+  also be mobile responsive and condense into a smaller format when disaplyed  on smaller devices. 
 
   **Mobile Responsiveness**<br>
   webpages should scale for smaller devices through media queries and flexbox/css grid. 
+
+  **Dark aesthetic and clean visuals**<br>
+  Staring at pure white webpages gets tiring after some time and so I wanted a dark theme that was easy on the eyes. 
+  
+  **General Interactivity**
+  Links (navigation bar, resume download) should respond to the user hovering over them. This doesn't have to be a huge animation and may help users in finding clickable links or provide a more stimulating user experience.
 
 ---
 
@@ -37,6 +44,8 @@ I've modified the website to also be mobile friendly and be accessible to the vi
 ___
 
 ### Wireframes
+
+
 Wireframe for home page below
 ![Wireframe for home](/docs/wireframes/homepagew.PNG)
 
@@ -70,6 +79,7 @@ Blog page below
 Contact page below
 ![Contact.html image](/docs/Contact.PNG)
 
+---
 
 ### Mobile Responsiveness
 
@@ -82,6 +92,17 @@ Example of blog and contact webpages on smaller screen
 
 Example of about webpage on smaller screen
 ![Mobile responsiveness - About](/docs/Mobile3.PNG)
+
+
+---
+
+### Task Management
+
+I used evernote for task management and made checkboxes for things that I needed to do or were outstanding.
+
+Example of tasks
+![Task management image](/docs/taskmanage.PNG)
+
 
 
 ---
@@ -104,4 +125,6 @@ This portfolio is aimed at potential employers or clients. The blog section coul
 #### Webhosting
 - Githubpages
 
+#### Task Management
+- Evernote
 ---
