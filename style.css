@@ -7,13 +7,16 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 
 :root { 
     /* font-family: 'Bree Serif', serif;  */
-    font-family: 'Libre Baskerville', serif;
+    /* font-family: 'Libre Baskerville', serif;*/
+    font-family: 'Do Hyeon', sans-serif;
     font-weight:200; /*400 is standard*/
-    background-color:#18161B}
+    background-color:rgb(5, 3, 150)}
 
 
 body{
@@ -56,8 +59,12 @@ header div{
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------*/
 
 .active{
-    color:#978376;
+    color:yellow;
     /*styles active page link*/
+}
+
+.navbox{
+    position:fixed;
 }
 
 nav{
@@ -77,13 +84,13 @@ nav ul{
 
 nav ul li a{
     text-decoration: none;
-    color:#F5FAF9;
+    color:lime;
     padding:0 10px 0 10px;
     
 }
 
 nav a:hover{
-    color:#978376;
+    color:yellow;
 } 
 
 
