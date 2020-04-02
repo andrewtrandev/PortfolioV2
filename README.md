@@ -70,7 +70,22 @@ Blog page below
 Contact page below
 ![Contact.html image](/docs/Contact.PNG)
 
+
+### Mobile Responsiveness
+
+Example of projects and home webpages on smaller screens
+![Mobile responsiveness - Projects and Home](/docs/Mobile1.PNG)
+
+Example of blog and contact webpages on smaller screen
+![Mobile responsiveness - Blog and Contact](/docs/Mobile2.PNG)
+
+
+Example of about webpage on smaller screen
+![Mobile responsiveness - About](/docs/Mobile3.PNG)
+
+
 ---
+
 
 ### Target Audience
 This portfolio is aimed at potential employers or clients. The blog section could also be targeted at anyone wishing to know what my journey through a coding bootcamp looks like i.e potential bootcamp students.
