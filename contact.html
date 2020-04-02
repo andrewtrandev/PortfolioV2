@@ -23,24 +23,25 @@
     </header>
 
 
-    <div class="contacttext">
+    <div class="contacttext"> <!--contact text, used for margin-top styling-->
         <p>
             You can contact me on any of the following platforms </br>or</br>through the contact form listed below
         </p>
     </div>
 
 
-    <!--social media icons with hyperlinks-->
-    <section class="contactme">
-        <div class="iconblock">
+
+    <section class="contactme"> <!--wrapper for iconblocks, flex this and display elements evenly-->
+        <div class="iconblock"> <!--iconblock consisting of link to email, image and text, flex this and use to 
+            display components in column, note these "iconblocks" repeat for below lines-->
             <a href="mailto:andrewttran@outlook.com"> <img src="img/email2.png" alt="Email icon"> </a>   
             <h3>Email</h3>
         </div>
-        <div class="iconblock github">
+        <div class="iconblock github"> <!--icon block with two classes because github icon needed repositioning-->
             <a href="https://github.com/andrewtrandev"> <img src="img/github2.png" alt="Github logo"></a>
             <h3>GitHub</h3>
         </div>
-        <div class="iconblock linkedin">
+        <div class="iconblock linkedin"><!--icon block with two classes because icon needed repositioning-->
             <a href="#"> <img src="img/linkedin.png" alt="LinkedIn logo"> </a>   
             <h3>LinkedIn</h3>
         </div>
@@ -54,28 +55,28 @@
         </div>
     </section>
 
-    <div class="pdfdownload">
-        <a href="./docs/resume.pdf" download>Download my resume</a>
+    <div class="pdfdownload">  <!--container for pdf download-->
+        <a href="./docs/resume.pdf" download>Download my resume</a> <!-- pdf download link-->
     </div>
    
     
-    <section class="contactwrapper">
-        <div class="contactbox">
+    <section class="contactwrapper"> <!-- wrapper for contact form section-->
+        <div class="contactbox"> <!-- container for heading and contact form-->
             <h3>Contact me</h3>
-            <form class="contact">
+            <form class="contact">   <!--contact form components - consisting of labels and input-->
                 <div>
-                    <label>Name</label><br>
-                    <input type="text" placeholder="Enter your name">
+                    <label>Name</label><br>  <!--using label for input, apparently good for screen reader users also-->
+                    <input type="text" placeholder="Enter your name"> <!--takes in input as line of text -->
                 </div>
                 <div>
                     <label>Email</label><br>
-                    <input type="email" placeholder="Enter your email address">
+                    <input type="email" placeholder="Enter your email address"> <!--input type email should validate for correct email addresses -->
                 </div>
                 <div>
                     <label>Message</label><br>
-                    <textarea placeholder="Type your message here :D"></textarea>
+                    <textarea placeholder="Type your message here :D"></textarea> <!-- input type formulti-line text-->
                 </div>
-                <button>Send</button>
+                <button>Send</button> <!--makes a button, just for graphics-->
             </form>
         </div>
     </section>
