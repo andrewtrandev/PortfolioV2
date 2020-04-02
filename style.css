@@ -69,7 +69,6 @@ nav ul{
     list-style-type: none;
     justify-content: center;
     margin:0;
-    flex-wrap:wrap;
     padding:0;
 }
 
@@ -246,6 +245,7 @@ div .blogimg{
     grid-gap:3em;
     max-width:90%;
     margin:auto;
+    margin-top:3em;
 }
 
 .projects img{
@@ -390,6 +390,14 @@ aside{
     }
 
     }
+
+/*allow nav bar to wrap when under 450px*/
+@media(max-width:450px){
+    nav ul{
+          flex-wrap:wrap;
+    }
+}
+
 
 @media(max-width:375px){
     .contact input, .contact textarea{
