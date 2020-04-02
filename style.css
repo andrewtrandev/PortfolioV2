@@ -1,13 +1,12 @@
 
 /* GLOBALS ----------------------------------------------------------------------------------------------- */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap'); /*importing google fonts*/
 
 
 /*applies the following properties to all of the document*/
 :root { 
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Code Pro', monospace; /*font family for google font*/
     font-weight:500; /*400 is standard*/
     background-color:#18161B;
     font-size:18px;}
@@ -28,8 +27,7 @@ body{
 header{
     display:flex; 
     flex-wrap:wrap;
-    align-items:center;
-    justify-content: space-around;
+    align-items:center; /*align items across horizontally*/
 }
 
 /* header brandname - sharing space with nav bar*/
@@ -235,14 +233,12 @@ footer{
 /*center every blog image*/
 div .blogimg{
     display:flex;
-    justify-content: center;
+    justify-content: center; /*centers blog image*/
+    margin-top:3em;
 }
 
 /*blog images*/
 .blogimg img{
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;*/
     border-radius:4%;
     max-width:600px;
     height:auto;
@@ -264,10 +260,10 @@ div .blogimg{
 /*image for project article*/
 .projects img{
     /*note that below 2 lines allow for good image resizing */
-    max-width:100%;
-    height:auto;
+    max-width:100%;  /*set picture as max width and allow height to auto adjust*/
+    height:auto; 
     border-radius:1em;
-    margin:auto;
+    margin:auto; /*center image- vertically and horizontally*/
 }
 
 
@@ -289,11 +285,10 @@ div .blogimg{
 
 
 /*container for each iconblock - icon + icon text*/
-/* making icons responsive and display evenly across screen */
 .contactme{
     display:flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    flex-flow: row wrap; /*display icons in a row and allow wrapping*/
+    justify-content: space-evenly; /*space them out evenely*/
     align-items:center;
 }
 
@@ -301,7 +296,7 @@ div .blogimg{
 /*allow icon block consisting of icon and text to flex and display as column with wrapping*/
 .iconblock{
     display:flex;
-    flex-flow: column wrap;
+    flex-flow: column wrap; /*display as column and allow wrapping*/
     align-items: center;
     margin-top:3em;
     padding:0.5em;
@@ -309,7 +304,7 @@ div .blogimg{
 
 /*icon for linked in*/
 .iconblock.linkedin{
-    position:relative;
+    position:relative; /*made relative so that it could move*/
     top:0.6em;
 }
 
@@ -326,7 +321,7 @@ div .blogimg{
 
 /*animations for social media icons*/
 .iconblock img:hover{
-    transform:scale(1.1);
+    transform:scale(1.1); /*icon grows bigger when hovered over*/
     transition-duration:1s ;
 }   
 
