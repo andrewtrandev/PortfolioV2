@@ -1,429 +1,415 @@
-
 /* GLOBALS ----------------------------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap'); /*importing google fonts*/
-
-
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap"); importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 /*applies the following properties to all of the document*/
-:root { 
-    font-family: 'Source Code Pro', monospace; /*font family for google font*/
-    font-weight:500; /*400 is standard*/
-    background-color:#18161B;
-    font-size:18px;}
+:root {
+  /* font-family: "Source Code Pro", monospace; font family for google font */
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 500; /*400 is standard*/
+  background-color: #18161b;
+  font-size: 18px;
+}
 
-
-    /*applies color to all text in bodies*/
-body{
-    /* color:#F5FAF9; white*/
-    color:#978376; /*brown*/
-    /* color:#5C5F4A; green*
+/*applies color to all text in bodies*/
+body {
+  /* color:#F5FAF9; white*/
+  color: #978376; /*brown*/
+  /* color:#5C5F4A; green*
     /* color:#18161B; black*/
 }
 
+a:link {
+  color: #5c5f4a;
+}
+
+a:visited {
+  color: #978376;
+}
 
 /* HEADER  ------------------------------------------------------------------------------------------------*/
 
 /*header consisting of navbar and brand name*/
-header{
-    display:flex; 
-    flex-wrap:wrap;
-    align-items:center; /*align items across horizontally*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /*align items across horizontally*/
 }
 
 /* header brandname - sharing space with nav bar*/
-#name{
-    display:flex;
-    flex:1;
-    justify-content: center;
+#name {
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
-    
-#name h1 a{
-    text-decoration: none;
-    color:#F5FAF9;
+
+#name h1 a {
+  text-decoration: none;
+  color: #f5faf9;
 }
 
 /*brand name at top left*/
-#name :hover{
-    transform:scale(1.1)
+#name :hover {
+  transform: scale(1.1);
 }
 
 /* NAVIGATION BAR ------------------------------------------------------------------------------------------------*/
 
 /*styles active page link*/
-.active{
-    color:#978376;
+.active {
+  color: #978376;
 }
 
-   /*navbar taking up 2/3 of space in relation to brand name which is taking up 1/3 */
-nav{
-    flex:2; 
- 
+/*navbar taking up 2/3 of space in relation to brand name which is taking up 1/3 */
+nav {
+  flex: 2;
 }
 
 /*navbar consisting of unordered list*/
-nav ul{
-    display:flex;
-    list-style-type: none;
-    justify-content: center;
-    margin:0;
-    padding:0;
+nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-
 /*nav bar links - styling*/
-nav ul li a{
-    text-decoration: none;
-    color:#F5FAF9;
-    padding:0 10px 0 10px;
-    
+nav ul li a {
+  text-decoration: none;
+  color: #f5faf9;
+  padding: 0 10px 0 10px;
 }
 
 /*nav bar link - hover effect*/
-nav a:hover{
-    color:#978376;
-} 
-
-/* nav bar link - highlight for the active page*/
-nav a:active{
-position:relative;
-top: 2px;
+nav a:hover {
+  color: #978376;
 }
 
+/* nav bar link - highlight for the active page*/
+nav a:active {
+  position: relative;
+  top: 2px;
+}
 
 /* HOME PIC ------------------------------------------------------------------------------------------------*/
 
 /*the home showcase picture*/
-#homepic{
-    /* min-height: 600px; */
-    min-height: 37.5em;
-    background:url('img/mainpic2.jpeg') no-repeat;
-    background-position:center;
-    border-radius:2em;
+#homepic {
+  /* min-height: 600px; */
+  min-height: 37.5em;
+  background: url("img/mainpic2.jpeg") no-repeat;
+  background-position: center;
+  border-radius: 2em;
 }
-
-
 
 /* HOME TEXT------------------------------------------------------------------------------------------------*/
 
 /*text on home page*/
 .home {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*first paragraph of home text*/
-.home :first-child{
-    padding-top:3em;
+.home :first-child {
+  padding-top: 3em;
 }
 
 /*home paragraphs*/
-.home p{ 
-    margin:0;
-    padding:1em;
+.home p {
+  margin: 0;
+  padding: 1em;
 }
-
-
 
 /* FOOTER ------------------------------------------------------------------------------------------------*/
 
-footer{
-    display:flex;
-    align-items: flex-end;
-    justify-content: center;
-    font-size:0.7em;
-    margin-top:4em;
-    padding:1.5em;
-    /* border:1px solid black; */
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 0.7em;
+  margin-top: 4em;
+  padding: 1.5em;
+  /* border:1px solid black; */
 }
 
 /* ABOUT ------------------------------------------------------------------------------------------------*/
 
 /*about me text container*/
 /* makes the about text paragraphs centered and display as column*/
-.abouttext{
-    display:flex;
-    flex-flow: column;
-    margin-top:6em;
-    align-items: center;
+.abouttext {
+  display: flex;
+  flex-flow: column;
+  margin-top: 6em;
+  align-items: center;
 }
 
 /*set width of the paragraph boxes*/
-.abouttext p{
-    text-align:center;
-    max-width:75%;
+.abouttext p {
+  text-align: center;
+  max-width: 75%;
 }
 
 /*container for listed items in about*/
-.aboutlistbox{
-    display:flex;
-    justify-content: center;
+.aboutlistbox {
+  display: flex;
+  justify-content: center;
 }
 
 /*highlights for headings in about*/
-.heading{
-    margin-top: 1em;
-    padding:1em;
-    color:#F5FAF9;
+.heading {
+  margin-top: 1em;
+  padding: 1em;
+  color: #f5faf9;
 }
 
 /*about list items*/
-.aboutlist li{
-    padding:0.3em;
+.aboutlist li {
+  padding: 0.3em;
 }
-
 
 /*node.js list item*/
 /* the node icon was a bit bigger so I had to adjust it a bit to make it more uniform */
-.nodefix{
-    padding-top:0;
-    padding-bottom:2em;
+.nodefix {
+  padding-top: 0;
+  padding-bottom: 2em;
 }
 
 /*about list imgs*/
-.aboutlist li img:hover{
-    transform:scale(1.2);
+.aboutlist li img:hover {
+  transform: scale(1.2);
 }
-
-
 
 /* BLOG  ------------------------------------------------------------------------------------------------*/
 
 /*container for all blog elements*/
-.blogwrapper{
-    max-width:90%;
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-row-gap:5em;
+.blogwrapper {
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-row-gap: 5em;
 }
 
 /*blog headings and paragraphs*/
-.blogwrapper h2, .blogwrapper p{
-    margin:0;
-    padding:0;
-    text-align:center;
+.blogwrapper h2,
+.blogwrapper p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 /*article consisting of blog heading, date and text*/
-.blogblock{
-    background:#978376;
-    padding:2em;
-    border-radius:1em;
-    border-style:dashed;
-    margin:auto;
+.blogblock {
+  background: #978376;
+  padding: 2em;
+  border-radius: 1em;
+  border-style: dashed;
+  margin: auto;
 }
 
 /*alternating colours for blogposts*/
-.blogblock:nth-of-type(even){
-    background:#5C5F4A;
-    color:#18161B;
-   }
+.blogblock:nth-of-type(even) {
+  background: #5c5f4a;
+  color: #18161b;
+}
 
 /*blog text alternatining colours*/
-.blogblock:nth-of-type(odd){
-    color:#18161B;
+.blogblock:nth-of-type(odd) {
+  color: #18161b;
 }
 
 /*blog text*/
-.blogtext{
-    padding-top:1em;
+.blogtext {
+  padding-top: 1em;
 }
 
-
 /*center every blog image*/
-div .blogimg{
-    display:flex;
-    justify-content: center; /*centers blog image*/
-    margin-top:3em;
+div .blogimg {
+  display: flex;
+  justify-content: center; /*centers blog image*/
+  margin-top: 3em;
 }
 
 /*blog images*/
-.blogimg img{
-    border-radius:4%;
-    max-width:600px;
-    height:auto;
+.blogimg img {
+  border-radius: 4%;
+  max-width: 600px;
+  height: auto;
 }
 
 /* PROJECTS ----------------------------------------------------------------------------------------------- */
 
 /*projects article
 /*setting 2 columns for grid, centered with margin:auto*/
-.projects{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:3em;
-    max-width:90%;
-    margin:auto;
-    margin-top:3em;
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 3em;
 }
 
 /*image for project article*/
-.projects img{
-    /*note that below 2 lines allow for good image resizing */
-    max-width:100%;  /*set picture as max width and allow height to auto adjust*/
-    height:auto; 
-    border-radius:1em;
-    margin:auto; /*center image- vertically and horizontally*/
+.projects img {
+  /*note that below 2 lines allow for good image resizing */
+  max-width: 100%; /*set picture as max width and allow height to auto adjust*/
+  height: auto;
+  border-radius: 1em;
+  margin: auto; /*center image- vertically and horizontally*/
 }
 
-
 /*apply to spans on projects*/
-.highlights{
-    color:#F5FAF9;
+.highlights {
+  color: #f5faf9;
 }
 
 /* CONTACT ------------------------------------------------------------------------------------------------ */
 
 /* contact text just below header*/
-.contacttext{
-    margin-top:4em;
-    text-align:center;
+.contacttext {
+  margin-top: 4em;
+  text-align: center;
 }
-
 
 /* ICONS ------------------------------------- */
 
-
 /*container for each iconblock - icon + icon text*/
-.contactme{
-    display:flex;
-    flex-flow: row wrap; /*display icons in a row and allow wrapping*/
-    justify-content: space-evenly; /*space them out evenely*/
-    align-items:center;
+.contactme {
+  display: flex;
+  flex-flow: row wrap; /*display icons in a row and allow wrapping*/
+  justify-content: space-evenly; /*space them out evenely*/
+  align-items: center;
 }
 
 /*icon img + icon text*/
 /*allow icon block consisting of icon and text to flex and display as column with wrapping*/
-.iconblock{
-    display:flex;
-    flex-flow: column wrap; /*display as column and allow wrapping*/
-    align-items: center;
-    margin-top:3em;
-    padding:0.5em;
+.iconblock {
+  display: flex;
+  flex-flow: column wrap; /*display as column and allow wrapping*/
+  align-items: center;
+  margin-top: 3em;
+  padding: 0.5em;
 }
 
 /*icon for linked in*/
-.iconblock.linkedin{
-    position:relative; /*made relative so that it could move*/
-    top:0.6em;
+.iconblock.linkedin {
+  position: relative; /*made relative so that it could move*/
+  top: 0.6em;
 }
 
 /* targeting github icon specifically because it was out of line*/
-.iconblock.github{
-    position:relative;
-    top:0.5em;
+.iconblock.github {
+  position: relative;
+  top: 0.5em;
 }
 
 /*targeting github text under the github icon because it was out of line*/
-.iconblock.github h3{
-    padding-top:0.6em;
+.iconblock.github h3 {
+  padding-top: 0.6em;
 }
 
 /*animations for social media icons*/
-.iconblock img:hover{
-    transform:scale(1.1); /*icon grows bigger when hovered over*/
-    transition-duration:1s ;
-}   
-
+.iconblock img:hover {
+  transform: scale(1.1); /*icon grows bigger when hovered over*/
+  transition-duration: 1s;
+}
 
 /*PDF DOWNLOAD ------------------------------------*/
 
 /*container for pdf link*/
-.pdfdownload{
-    display:flex;
-    justify-content: center;
+.pdfdownload {
+  display: flex;
+  justify-content: center;
 }
 
 /*styling for pdf link*/
 /*style pdf link*/
-.pdfdownload a{
-    color: #F5FAF9;
-    margin-top:5em;
-    margin-bottom:3em;
+.pdfdownload a {
+  color: #f5faf9;
+  margin-top: 5em;
+  margin-bottom: 3em;
 }
 
 /*enlarge pdf download button */
-.pdfdownload a:hover{
-    transform:scale(1.1)
+.pdfdownload a:hover {
+  transform: scale(1.1);
 }
 
 /* CONTACT BOX ------------------------------------- */
 
 /* container for contactbox*/
 /*centers side bar*/
-.contactwrapper{
-    display:flex;
-    justify-content: center;
+.contactwrapper {
+  display: flex;
+  justify-content: center;
 }
 
 /*styling for contact box*/
-.contactbox{
-    border: 1px #F5FAF9;
-    border-style: dashed;
-    margin-top:3em;
-    padding:1em 2.5em 2.5em 2.5em;
-    background-color:#978376;
-    border-radius:1em;
-    color:#18161B;
+.contactbox {
+  border: 1px #f5faf9;
+  border-style: dashed;
+  margin-top: 3em;
+  padding: 1em 2.5em 2.5em 2.5em;
+  background-color: #978376;
+  border-radius: 1em;
+  color: #18161b;
 }
-
 
 /*contact box - user input for message*/
-.contact textarea{
-    height:90px;
-    resize:none;
+.contact textarea {
+  height: 90px;
+  resize: none;
 }
 
-
 /*sets the input box sizes for the contact form*/
-.contact input, .contact textarea{
-    width:45em;
-    padding:0.3em;
- }
-
+.contact input,
+.contact textarea {
+  width: 45em;
+  padding: 0.3em;
+}
 
 /* MEDIA QUERIES ------------------------------------------------------------------------------------------------*/
 
-
 /*if media screen goes under 980px*/
-@media(max-width:980px){
-    
-    /*In blog section turn grid columns to 1 row instead of 2*/
-    .blogwrapper{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 980px) {
+  /*In blog section turn grid columns to 1 row instead of 2*/
+  .blogwrapper {
+    grid-template-columns: 1fr;
+  }
 
+  /*In projects section turn grid columns to 1 row instead of 2*/
+  .projects {
+    grid-template-columns: 1fr;
+  }
 
-     /*In projects section turn grid columns to 1 row instead of 2*/
-    .projects{
-        
-        grid-template-columns: 1fr;
-    }
+  /*resize contact box on contact page*/
+  .contact input,
+  .contact textarea {
+    width: 20em;
+    padding: 0.3em;
+  }
 
-    /*resize contact box on contact page*/
-    .contact input, .contact textarea{
-        width:20em;
-        padding:0.3em;
-     }
-
-     /*resize blog images*/
-     .blogimg img{
-        max-width:340px;
-        height:auto;
-    }
-
-    }
+  /*resize blog images*/
+  .blogimg img {
+    max-width: 340px;
+    height: auto;
+  }
+}
 
 /*allow nav bar to wrap when under 450px*/
-@media(max-width:450px){
-    nav ul{
-          flex-wrap:wrap;
-    }
+@media (max-width: 450px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
 }
 
 /*make input boxes on contact form smaller when under 375px screen width*/
-@media(max-width:375px){
-    .contact input, .contact textarea{
-        padding:0.3em;
-     }
+@media (max-width: 375px) {
+  .contact input,
+  .contact textarea {
+    padding: 0.3em;
+  }
 }
