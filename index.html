@@ -1,49 +1,65 @@
 <!DOCTYPE html>
-<html lang="en"> <!--language english-->
-<head>
-    <meta charset="UTF-8"> <!--defines character set-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this allows for responsive design-->
+<html lang="en">
+  <!--language english-->
+  <head>
+    <meta charset="UTF-8" />
+    <!--defines character set-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- this allows for responsive design-->
     <!--viewport - gives browser instruction to set width of page as the screen width of the device-->
     <!-- initial scale is the initial zoom-->
-    <title>Andrew Tran Design | Home</title>  <!--title of webpage, changes for each page -->
+    <title>Andrew Tran Design | Home</title>
+    <!--title of webpage, changes for each page -->
     <!--linked to external css sheet below and including an integrity check for malicious tampering, repeats on other pages-->
-    <link rel="stylesheet" href="./style.css"   
-    integrity="sha512-DQLNU2Q91Wq6XkOZ0xbWsTOY2feEPtzHJ5u+JXaqA5obuZlJAlox4kWrfOeHd9wq1kF7IQzdRsIut80viq3qbA==">
-</head>
-<!-- lines 1-10 are repeated in about, projects, blog and contact-->
+    <link
+      rel="stylesheet"
+      href="./style.css"
+      integrity="sha512-DQLNU2Q91Wq6XkOZ0xbWsTOY2feEPtzHJ5u+JXaqA5obuZlJAlox4kWrfOeHd9wq1kF7IQzdRsIut80viq3qbA=="
+    />
+  </head>
+  <!-- lines 1-10 are repeated in about, projects, blog and contact-->
 
-<body>
-
+  <body>
     <header>
-        <div id="name"> <!--used to contain brand name and apply flex, centering and target styling, note this repeats on other pages-->
-            <h1><a href="index.html">Andrew Tran</a></h1>  <!-- brand name taking you back to homepage-->
-        </div>
+      <div id="name">
+        <!--used to contain brand name and apply flex, centering and target styling, note this repeats on other pages-->
+        <h1><a href="index.html">Andrew Tran</a></h1>
+        <!-- brand name taking you back to homepage-->
+      </div>
 
-       
-        <nav>  <!-- main nav bar, note this is repeated for all other pages with the active class being associated 
+      <nav>
+        <!-- main nav bar, note this is repeated for all other pages with the active class being associated 
                 with that page-->
-            <ul>
-                <li><a class="active" href="index.html">HOME</a></li> <!--active class is used for highlighting what page you're on-->
-                <li><a href="about.html">ABOUT</a></li>  <!--link to other pages of website, note these repeat for below 3 lines and all other pages-->
-                <li><a href="projects.html">PROJECTS</a></li>
-                <li><a href="blog.html">BLOG</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+        <ul>
+          <li><a class="active" href="index.html">HOME</a></li>
+          <!--active class is used for highlighting what page you're on-->
+          <li><a href="about.html">ABOUT</a></li>
+          <!--link to other pages of website, note these repeat for below 3 lines and all other pages-->
+          <li><a href="projects.html">PROJECTS</a></li>
+
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
 
-     <section>
-     <div id="homepic"> <!--home pic for homepage, made id to style it specifically-->
-     </div>
+    <section>
+      <div id="homepic">
+        <!--home pic for homepage, made id to style it specifically-->
+      </div>
     </section>
 
-    <div class="home"> <!--home page text, used flex on this to center and display as column, also used to target styling on paragraphs-->
-        <p>Hi, I'm Andrew</p>
-        <p>Aspiring web developer currently studying at a coding bootcamp by Coder Academy.</p>
+    <div class="home">
+      <!--home page text, used flex on this to center and display as column, also used to target styling on paragraphs-->
+      <p>Hi, I'm Andrew</p>
+      <p>
+        Aspiring web developer currently studying at a coding bootcamp by Coder
+        Academy.
+      </p>
     </div>
-    
-<footer> <!--footer , note that footer is repeated for all other pages-->
-    <p>Copyright &copy; 2020, Andrew Tran</p>
-</footer>
-</body>
+
+    <footer>
+      <!--footer , note that footer is repeated for all other pages-->
+      <p>Copyright &copy; 2020, Andrew Tran</p>
+    </footer>
+  </body>
 </html>
