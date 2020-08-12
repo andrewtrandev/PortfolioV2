@@ -1,6 +1,4 @@
-**Portfolio Website URL:** https://andrewtrandev.github.io/Portfolio-Website/
-
-**GitHub Repo URL:** https://github.com/andrewtrandev/WebFolio
+**Portfolio Website URL:** https://andrewtrandev.github.io/PortfolioV2/
 
 ---
 
